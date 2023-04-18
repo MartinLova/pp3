@@ -8,7 +8,36 @@
         <link rel="stylesheet" href="bootstrap.min.css"> <!--para vincular con la libreria bootstrap.css-->
     </head>
     <body>
-   
+        <nav class="navbar  bg-danger mb-3" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+        </nav>
+    
+        <div class="container">  <!-- contenido de la web-->
+            <div class="row"> <!-- filas da orden y dinamismo. Las filas se pueden dividir en 12 partes-->
+               <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-3">
+               <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Apellido</label> <!--class="form-label" para dar espaciado reducido sobre el siguiente elemento -->
+                    <input type="text" class="form-control"> <!--class="form-control" para dar el formato de ingresar el texto con el borde de color-->
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Button</button>
+                  </div>                
+                </div>
+            
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button">Button</button>
+                </div>                
+            </div>
+          
+            </div>
+        </div>
         <button class="btn btn-outline-primary btn-sm" >Aceptar</button>
       
     </body>
