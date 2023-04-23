@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de filas y columnas clase año anterior</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Filas y Columnas</span>
+        </div>
+    </nav>
+    
+    <div class="container mt-3">
+        <h1 class="display-6">Grid - Breakpoint</h1>
+        <div class="row"> <!--para crear una fila-->
+             <!--cada fila se puede dividir hasta en 12 partes--> 
+             <!--para crear una columna primero debe estar creada la fila-->
+              <!--cuando voy creado columnas va ocupando lugar de la fila de izquierda a derecha-->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12"> <!--para crear una columna, en este caso de tamaño 4 que es 1/3 de la fila-->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb3"> <!-- para dar un espacio-->
+                            <label class="form-label">Nombre</label>
+                            <input class="form-control" type="text">
+                        </div>    
+                        <div class="mb3"> <!-- para dar un espacio-->
+                            <label class="form-label">DNI</label>
+                            <input class="form-control" type="number">
+                        </div> 
+                        <div class="d-grid gap-2 justify-content-md-end">
+                            <button class="btn btn-outline-success">Enviar</button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                <div class="mb3">
+                    <label class="form-label">Apellido</label>
+                    <input class="form-control" type="text">
+                </div>
+            </div>   
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+            <!--la siguiente configuración de columna es posteriormente cambiada por una imágen:
+                <div class="mb3">
+                        <label class="form-label">CP</label>
+                            <input class="form-control" type="number">
+                    </div>-->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
