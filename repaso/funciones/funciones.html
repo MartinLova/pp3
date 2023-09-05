@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container mt -3"> 
+        <div class="row">  
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <label class="form-label">Operación</label>
+                     <!-- la línea siguiente tenía elect class="form-select" id="slt_operacion" -->
+                    <select onchange="cambiar_label()" class="form-label" id="slt_operacion">
+                        <option selected disable value="-1">Seleccione operacion</option>
+                        <option value="0">Sumar</option>
+                        <option value="1">Restar</option>
+                        <option value="2">Multiplicar</option>
+                        <option value="3">Dividir</option>
+                        <option value="4">Corriente</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Dato1</label>
+                    <input id="inp_d1" class="form-control" type="number">
+                </div>                    
+                <div class="mb-3">
+                    <label id="lbl_d1" class="form-label" placeholder="lbl_d1"></label>
+                    <input id="inp_d2" class="form-control" type="number">
+                </div>
+                <button onclick="recolectar()" id="btn_calcular" class="btn btn-sucess">Calcular</button>
+            </div> 
+            
+            <div class="col-lg-6">
+                <h4 id="h_resultado"></h4>    
+            </div> 
+        </div>
+    </div>
+<Script src="funciones.js"></Script>
+</body>
+</html>

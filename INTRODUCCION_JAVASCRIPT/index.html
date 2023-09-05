@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción JavaScript</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+<body>
+    <button id="btn_evento">Probando evento</button>
+    <!--desde el boton accionamos un evento configurado en java script asociandolo por un código-->
+    <!--único como si fuera el DNI que es el "id"-->
+    <button class="btn" id="btn_repaso">Repaso de eventos</button>
+    
+    <div class="row"> <!--creo una fila-->
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12"> <!--columna de tamaño 6 / la mitad de la pantalla-->  
+            <!--input field para tomar ese formato--> 
+            <input id="inp_d1" placeholder="Ingrese dato 1" type="number" class="validate">
+            <label>Dato1</label> 
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <!--<div class="input -field col s6">-->
+            <input id="inp_d2" placeholder="Ingrese dato 2" type="number" class="validate">
+            <label for="">Dato2</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <button class="btn btn-outline-success" id="btn_calcular">Calcular</button>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <input type="number" id="inp_resultado">
+        </div> 
+    </div>
+
+    <script src="eventos.js"></script>
+    <script src="funciones.js"></script>
+    <script src="eventos2.js"></script>
+</body>
+</html>

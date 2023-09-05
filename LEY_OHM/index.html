@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">ACTIVIDAD_Nº1_FUNCIONES_LEY_DE_OHM</span>
+        </div>
+    </nav>
+    
+    <div class="container mt-3">
+        <h1 class="display-12">LEY DE OHM TENSION(E)=INTENSIDAD(I)*RESISTENCIA(R)</h1>
+        <div class="row"> <!--para crear una fila-->
+             <!--cada fila se puede dividir hasta en 12 partes--> 
+             <!--para crear una columna primero debe estar creada la fila-->
+              <!--cuando voy creado columnas va ocupando lugar de la fila de izquierda a derecha-->
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12"> <!--para crear una columna, en este caso de tamaño 6 que es 1/2 de la fila-->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Señale que dato desea Obtener </label>
+                             <!-- la línea siguiente tenía elect class="form-select" id="slt_operacion" -->
+                            <select onchange="cambiarlabel()" class="form-label" id="slt_operacion">
+                                <option selected disable value="-1">Seleccione operacion</option>
+                                <option value="0">Resistencia</option>
+                                <option value="1">Intensidad</option>
+                                <option value="2">Tensión</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label id="lbl_d1" class="form-label">Dato1</label>
+                            <input id="inp_d1" class="form-control" type="number">
+                        </div>                    
+                        <div class="mb-3">
+                            <label id=lbl_d2 class="form-label">Dato2</label>
+                            <input id="inp_d2" class="form-control" type="number">
+                        </div>
+                        <button onclick="recolectar()" id="btn_calcular" class="btn btn-outline-success">Calcular</button>           
+                    </div>
+                 </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                <img src="LEYDEOHM.jpeg" class="img-fluid" alt="">
+                <h4 id="h_resultado"></h4>
+                <!--div class="mb3">
+                    <button onclick="vaciar()" id="btn_nuevo" class="btn btn-outline-success">Nuevo Cálculo</button>              
+                </div-->
+            </div>
+        </div>
+    </div>
+   
+<Script src="main.js"></Script>
+</body>
+</html>
