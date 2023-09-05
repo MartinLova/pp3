@@ -1,5 +1,7 @@
 function cambiarlabel()
 {
+ document.getElementById("inp_d1").value = '' 
+ document.getElementById("inp_d2").value = ''   
  const tipo_operacion = document.getElementById("slt_operacion").value   
  console.log(tipo_operacion)
  if(tipo_operacion == 0)   
@@ -45,10 +47,13 @@ function calcular(dato1,dato2,operacion)
         ummagnitud = 'Ampers'
     }
 
-    if (operacion == 2) {
+    if (operacion == 2) {document.getElementById("inp_d1").value = '' 
+    document.getElementById("inp_d2").value = ''
         resultado = dato1 * dato2
         ummagnitud = 'Volts'
     }
+
+    
     return resultado +': '+ummagnitud
 } 
 
