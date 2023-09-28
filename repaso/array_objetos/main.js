@@ -18,5 +18,5 @@ const alumnos = [
         } 
     },
 ]
-alumnos.forEach(Element => {console.log(element.usuario)
+alumnos.forEach(element => {console.log(element.usuario)
 });
