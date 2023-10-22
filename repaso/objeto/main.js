@@ -24,7 +24,7 @@ const { gmail, outlook} = empleado.correos
  *  (se crean las constantes y se acceden a las propiedades y se asginan los valores de las propiedades 
  * en las constantes)
 */
-const { apellido } = empleado
+const { apellido } = empleado.apellido
 
 document.write(gmail)
 
